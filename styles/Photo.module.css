@@ -1,0 +1,221 @@
+.photosContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15rem;
+
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: uppercase;
+    margin-bottom: 5.5rem;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1.5rem;
+}
+
+.topContainer::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    left: 0;
+    width: 50%;
+    height: 200px;
+    background-image: var(--design2BSZ1rem1rem);
+    background-size: 1rem 1rem;
+}
+
+.heading {
+    color: var(--accent1); 
+    background-color: var(--accent4);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: "KenokyLight";
+    letter-spacing: 2px;
+    font-size: 6rem;
+}
+
+.btnContainer {
+    display: flex;
+    margin-bottom: 3rem;
+    background-color: var(--accent4);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 4rem;
+    color: var(--accent4);
+}
+
+.icon1 {
+    font-size: 4rem;
+    color: var(--accent1);
+}
+
+.boxContainer {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+        "one two three"
+        "one four five";
+    grid-template-columns: 50% 30% 20%;
+    padding-bottom: 1rem;
+    overflow: hidden;
+}
+
+.boxContainer h5,
+.boxContainer2 h5 {
+    font-family: "KenokyLight";
+    letter-spacing: 2px;
+    /* font-size: 6rem; */
+}
+
+.box1 {
+    grid-area: one;
+    height: 270px;
+}
+
+.box1,
+.box2, 
+.box3,
+.box4, 
+.box5,
+.box1B,
+.box2B,
+.box3B,
+.box4B,
+.box5B
+{
+    position: relative;  
+}
+
+.box3,
+.box4B {
+    background-color: var(--accent5);
+    color: var(--accent4);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3rem 3rem 1rem 2rem ;
+    cursor: pointer;
+}
+
+.box3 {
+    background-color: var(--accent3);
+}
+
+.box2B {
+   background-color: var(--accent1);
+   color: var(--accent4);
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-between;
+   padding: 3rem 3rem 1rem 2rem;
+   cursor: pointer;
+}
+
+.box4
+{
+    background-color: var(--accent1);
+    color: var(--accent4);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3rem 3rem 1rem 2rem;
+    cursor: pointer;
+}
+
+.boxContainer2 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "oneB twoB threeB"
+    "fourB fiveB threeB";
+    grid-template-columns: 25% 30% 45%;
+    overflow: hidden;
+}
+
+.box1B {
+    grid-area: twoB;
+}
+.box2B {
+    grid-area: oneB ;
+    background-color: var(--accent2);
+}
+.box3B {
+    grid-area: threeB;
+    grid-area: threeB;
+    height: 270px;
+}
+.box4B {
+    grid-area: fiveB;
+}
+.box5B {
+    grid-area: fourB ;
+}
+
+@media screen and (max-width: 1000px) {
+    .topContainer::before {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .boxContainer {
+        grid-template-areas:
+            "one one"
+            "two three"
+            "four five";
+        grid-template-columns: 50% 50%;
+        padding: 0 0 1rem 0;
+    }
+
+    .boxContainer2 {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            "threeB threeB"
+            "oneB twoB"
+            "fourB fiveB";
+        grid-template-columns: 50% 50%;
+        padding: 0 0 1rem 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topContainer {
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .topContainer {
+        margin-bottom: 5.5rem;
+    }
+}
+
+@media screen and (max-width: 328px) {
+    .topContainer {
+        margin-bottom: -1.5rem;
+    }
+}
+

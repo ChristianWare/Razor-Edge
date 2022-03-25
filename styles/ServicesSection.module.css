@@ -1,0 +1,142 @@
+.servicesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 15rem;
+    background-color: var(--accent);
+}
+
+.topContent  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: var(--accent1);
+    text-transform: uppercase;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.topContent::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    right: 0;
+    width: 50%;
+    height: 220px;
+    background-image: var(--design2BSZ1rem1rem);
+    background-size: 1rem 1rem;
+}
+
+.heading {
+    text-align: right;
+    background-color: var(--accent4);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: "KenokyLight";
+    letter-spacing: 2px;
+    font-size: 6rem;
+}
+
+.link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 400;
+    gap: 1rem;
+    cursor: pointer;
+    background-color: var(--accent4);
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.icon {
+    font-size: 4rem;
+}
+
+.bottomContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.cardOne, .cardTwo, .cardThree {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.cardOne {
+    background-color: var(--accent5);
+    color: var(--accent4);
+    height: 100%;
+}
+
+.cardTwo {
+    margin-top: 5rem;
+    background-color: var(--accent3);
+    color: var(--accent1);
+}
+
+.cardThree {
+    margin-top: 10rem;
+    background-color: var(--accent2);
+    color: var(--accent4);
+}
+
+.cardheading {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: "KenokyLight";
+    letter-spacing: 1px;
+    font-size: 4rem ;
+}
+
+.cardDescription {
+    text-align: left;
+    hyphens: auto;
+    width: 80%;
+    
+}
+
+.placeHolderImage {
+    position: relative;
+    margin-top: 3rem;
+    width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+    .bottomContent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cardDescription {
+        text-align: center;
+    }
+
+    .cardTwo, .cardThree {
+        margin-top: 0rem;
+    }
+
+    .topContent::before {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .topContent {
+        margin-bottom: 7.7rem ;
+    }
+}
+@media screen and (max-width: 615px) {
+    .bottomContent {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,83 @@
+.galleryContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.topContent {
+    padding: 5rem;
+}
+
+.heading {
+    /* width: 90%; */
+    line-height: 1.3;
+    color: var(--accent1);
+     font-family: "KenokyLight";
+     letter-spacing: 3px;
+     font-size: 7rem;
+}
+
+.topContent h5 {
+    width: 80%;
+    hyphens: auto;
+    color: var(--accent1);
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.map {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.photoContainer {
+    height: 300px;
+    position: relative;
+}
+
+@media screen and (min-width: 481px) {
+    .img {
+        position: absolute;
+        transition: all 0.3s ease-in;
+    }
+
+    .img:hover {
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem;
+        margin-top: 5rem;
+    }
+
+    .topContent h5, .heading {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .map {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .heading,
+    .topContent h5 {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .map {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

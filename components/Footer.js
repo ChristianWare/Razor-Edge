@@ -67,7 +67,7 @@ function Footer() {
         <hr />
         <div className={styles.copyrightContainer}>
           <small>
-            Gentelman's {new Date().getFullYear()} &copy; - All Rights Reserved
+            Razor Edge Studio {new Date().getFullYear()} &copy; - All Rights Reserved
             || Designed/Developed by{" "}
             <Link href='https://chrisware.io' passHref>
               <a className={styles.cw} target='_blank'>

@@ -12,8 +12,8 @@ function Hero() {
   return (
     <>
       <SEO
-        title="Gentelman's"
-        description='Welcome to the homepage of XYZ, the only place to get all of your XYZ Needs.'
+        title='RAZOR EDGE STUDIO'
+        description='Welcome to the homepage of Razor Edge Studio, the only place to get all of your XYZ Needs.'
       />
       <div className={styles.container}>
         <header className={styles.heroContainer}>

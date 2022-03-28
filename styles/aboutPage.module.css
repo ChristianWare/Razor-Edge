@@ -13,9 +13,9 @@
     color: var(--accent1);
     text-transform: uppercase;
     margin-bottom: 3rem;
-     font-family: "KenokyLight";
-     letter-spacing: 3px;
-     font-size: 7rem;
+    font-family: "KenokyLight";
+    letter-spacing: 3px;
+    font-size: 7rem;
 }
 
 .topContent h5 {
@@ -76,6 +76,8 @@
     text-align: left;
     text-transform: uppercase;
     padding: 3rem 3rem 0rem 3rem;
+    font-family: "KenokyLight";
+    letter-spacing: 3px;
 }
 
 .subHeadingDescription {
@@ -127,7 +129,6 @@
     width: 50%;
     margin-top: 1rem;
     margin-bottom: 3rem;
-    text-align: center;
 }
 
 .imageBox {
@@ -199,6 +200,10 @@
         
     }
 
+    .subHeading2 {
+        text-align: center;
+    }
+
     .subP {
         width: 100%;
         text-align: center;
@@ -237,9 +242,6 @@
         text-align: left;
     }
 
-    .subHeading2 {
-        text-align: right !important;
-    }
     .subP {
         text-align: right;
     }
